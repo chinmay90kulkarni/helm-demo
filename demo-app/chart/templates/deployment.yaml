@@ -4,7 +4,7 @@ metadata:
   name: {{ include "demo-app.fullname" . }}
   labels:
     {{- include "demo-app.labels" . | nindent 4 }}
-  namespace: my-pop
+  namespace: chinmay-flux-demo
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
