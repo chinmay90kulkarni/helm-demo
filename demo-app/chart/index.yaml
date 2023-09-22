@@ -9,6 +9,6 @@ entries:
     name: helm-demo
     type: application
     urls:
-    - https://github.com/chinmay90kulkarni/helm-demo.git/helm-demo-0.1.0.tgz
+    - https://github.com/chinmay90kulkarni/helm-demo.git/demo-app/chart/helm-demo-0.1.0.tgz
     version: 0.1.0
 generated: "2023-09-22T13:01:55.2088184+05:30"
