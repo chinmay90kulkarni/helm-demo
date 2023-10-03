@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: helm-demo-helmrelease
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: ./demo-app/chart
+      reconcileStrategy: Revision
+      sourceRef:
+        kind: GitRepository
+        name: helm-demo-source
+        namespace: flux-system
+  interval: 5m0s
+  targetNamespace: chinmay-iops-issue-testing
