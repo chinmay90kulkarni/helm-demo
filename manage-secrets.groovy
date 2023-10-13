@@ -1,9 +1,13 @@
 pipeline {
     agent any 
     stages {
-        stage('Build') { 
-            steps {
-                echo "This is Build stage."
+        stage('Build') {
+            script {
+                steps {
+                    echo "This is Build stage."
+                    printf("Hello world")
+                    aws --version   
+                }
             }
         }
         stage('Test') { 
